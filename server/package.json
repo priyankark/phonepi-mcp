@@ -1,0 +1,41 @@
+{
+  "name": "phonepi-mcp",
+  "version": "1.0.24",
+  "description": "PhonePi MCP - CLI tool for phone control via WebSocket",
+  "main": "dist/index.js",
+  "bin": {
+    "phonepi-mcp": "dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "websocket",
+    "phone-control",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "ws": "^8.13.0",
+    "typescript": "^5.0.0",
+    "commander": "^10.0.0",
+    "@types/ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "nodemon": "^3.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
