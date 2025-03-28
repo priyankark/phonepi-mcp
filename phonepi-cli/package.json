@@ -1,6 +1,6 @@
 {
   "name": "phonepi-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AI-powered CLI client for PhonePi MCP - Control your phone from the command line",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
