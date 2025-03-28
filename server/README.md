@@ -1,6 +1,9 @@
 # PhonePi MCP
 
-A CLI tool for controlling your phone via WebSocket using Model Context Protocol (MCP).
+A MCP server that lets you control your phone from your favorite AI apps!
+
+## Prerequisites
+You need to setup the PhonePi MCP app on your phone. Please visit [PhonePi MCP](https://phonepimcp.com) for instructions.
 
 ## Installation
 
@@ -15,6 +18,23 @@ Or run directly with npx:
 ```bash
 npx phonepi-mcp
 ```
+
+## Setup
+Simply add the following MCP config to your AI app:
+```
+{
+  "mcpServers": {
+    "phonepi-mcp": {
+      "command": "npx",
+      "args": [
+        "phonepi-mcp",
+        "start"
+      ]
+    }
+  }
+}
+```
+
 
 ## Usage
 
