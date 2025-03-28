@@ -35,10 +35,10 @@ Simply add the following MCP config to your AI app:
 }
 ```
 
+## Standalone usage
+The setup instructions above is all you need for setting it up with respect to MCP.
 
-## Usage
-
-PhonePi MCP provides a command-line interface to control the MCP server.
+But, PhonePi MCP also provides a standalone command-line interface to control the MCP server.
 
 ### Commands
 
