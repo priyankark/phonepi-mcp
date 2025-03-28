@@ -21,7 +21,7 @@ npm install -g phonepi-cli
 ## Prerequisites
 
 1. An Anthropic API key (get one from [Anthropic Console](https://console.anthropic.com))
-2. PhonePi app installed and running on your phone
+2. PhonePi app installed and running on your phone [Installation Instructions](https://www.phonepimcp.com/)
 
 ## Configuration
 
