@@ -37,8 +37,7 @@ We welcome contributions from the community! Here's how you can contribute:
    - Write clear commit messages
 
 3. **Testing**
-   - Add tests for new features
-   - Ensure all tests pass before submitting
+   - Wait for the maintainer to test your changes
 
 4. **Submit a Pull Request**
    - Provide a clear description of the changes
