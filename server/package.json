@@ -1,6 +1,6 @@
 {
   "name": "phonepi-mcp",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "PhonePi MCP - CLI tool for phone control via WebSocket",
   "main": "dist/index.js",
   "bin": {

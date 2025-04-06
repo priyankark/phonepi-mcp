@@ -41,9 +41,9 @@ Simply add the following MCP config to your AI app:
 Save the file with the above settings. This is all you need for your setup besides the mobile app.
 
 ## Connecting
-* Ensure your phone and your desktop are on the same network. Using something like Tailscale is recommended for convenience, but its optional.
+* Ensure your phone and your desktop are on the same network. Using something like Tailscale is recommended for convenience, but it's optional.
 * Enter the local ip address and port (11041) in the companion mobile app to connect to the server.
-* Once everything's connected correctly, you can simply start asking your AI assistant to do stuff! For example, try asking it to send a test notification on your phone.
+* Once everything's connected correctly, you can simply start asking your AI assistant to do stuff! For example, try asking it to send a test notification to your phone.
 
 # MCP server management cli (Optional)
 
