@@ -5,6 +5,9 @@ A MCP server that lets you control your phone from your favorite AI apps!
 ## Prerequisites
 You need to setup the PhonePi MCP app on your phone. Please visit [PhonePi MCP](https://phonepimcp.com) for instructions.
 
+# MCP Server Setup
+Simply follow the steps below to setup the server in your favorite AI apps such as Claude, Cline or Cursor.
+
 ## Installation
 
 Install the package globally:
@@ -35,10 +38,19 @@ Simply add the following MCP config to your AI app:
 }
 ```
 
-## Standalone usage (not to be used by MCP client)
+Save the file with the above settings. This is all you need for your setup besides the mobile app.
+
+## Connecting
+* Ensure your phone and your desktop are on the same network. Using something like Tailscale is recommended for convenience, but its optional.
+* Enter the local ip address and port (11041) in the companion mobile app to connect to the server.
+* Once everything's connected correctly, you can simply start asking your AI assistant to do stuff! For example, try asking it to send a test notification on your phone.
+
+# MCP server management cli (Optional)
+
+## Standalone usage
 The setup instructions above is all you need for setting it up with respect to MCP clients like Cline, Claude Desktop etc.
 
-But, PhonePi MCP also provides a standalone command-line interface for you to control the MCP server outside the clients.
+But, PhonePi MCP also provides a standalone command-line interface for you to manage the MCP server from outside the clients.
 
 ### Commands
 
