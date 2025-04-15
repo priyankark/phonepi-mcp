@@ -14,6 +14,13 @@ Phone MCP enables you to:
 - Set timers and reminders
 - Find your phone with audio alerts
 
+## Security
+Security is a high concern. Here are a few aspects taken into account around security:
+- You are completely in charge around hosting the MCP server locally. The code is completely open source.
+- On the app front, you are in charge of what permissions to give depending on the features you want to use.
+- The app and the server are linked over your local network. There's no 3p remote servers involved in linking.
+- It is highly recommended you use this app over a secure network. Avoid public networks like airports and restaurants.
+
 ## Getting Started
 
 For detailed documentation, features, and setup instructions, please visit:
