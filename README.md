@@ -20,6 +20,7 @@ Security is a high concern. Here are a few aspects taken into account around sec
 - On the app front, you are in charge of what permissions to give depending on the features you want to use.
 - The app and the server are linked over your local network. There's no 3p remote servers involved in linking.
 - It is highly recommended you use this app over a secure network. Avoid public networks like airports and restaurants.
+- Tailscale is highly recommended for creating a private & secure VPN to connect your phone and desktops
 
 ## Getting Started
 
