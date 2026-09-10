@@ -183,9 +183,10 @@ class PhonePiMCPServer {
             reason || "unknown"
           })`
         );
-        this.phoneConnection = null;
-        // Try to reconnect after a delay
-        setTimeout(() => this.connectToExistingServer(), 5000);
+        if (this.phoneConnection === ws) {
+          this.phoneConnection = null;
+          setTimeout(() => this.connectToExistingServer(), 5000);
+        }
       });
 
       // Send initial ping
@@ -238,7 +239,8 @@ class PhonePiMCPServer {
             reason || "unknown"
           })`
         );
-        this.phoneConnection = null;
+        // The old phone can close after its replacement has already connected.
+        if (this.phoneConnection === ws) this.phoneConnection = null;
       });
 
       ws.on("error", (error) => {
@@ -254,6 +256,8 @@ class PhonePiMCPServer {
   }
 
   private async processIncomingMessage(ws: WebSocket, data: any) {
+    // Ignore late messages from a connection that has been replaced.
+    if (ws !== this.phoneConnection) return;
     try {
       // Convert the data to string properly based on its type
       const dataString =
@@ -739,7 +743,7 @@ class PhonePiMCPServer {
         },
         {
           name: "send_sms",
-          description: "Send an SMS message",
+          description: "Prepare an SMS message on the phone. Current store apps open the SMS composer and require the user to confirm sending; keep the phone app open.",
           inputSchema: {
             type: "object",
             properties: {
