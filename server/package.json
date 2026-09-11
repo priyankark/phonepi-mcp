@@ -1,6 +1,6 @@
 {
   "name": "phonepi-mcp",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "PhonePi MCP - CLI tool for phone control via WebSocket",
   "main": "dist/index.js",
   "bin": {
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "npm run build && node --test tests/*.test.mjs"
   },
   "keywords": [
     "mcp",

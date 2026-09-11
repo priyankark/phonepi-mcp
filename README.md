@@ -8,7 +8,7 @@ Phone MCP enables you to:
 - Manage contacts and messages
 - Handle snippets and notes
 - Control phone settings and notifications
-- Send SMS and make calls
+- Prepare SMS messages for confirmation on your phone and make calls
 - Share content across apps
 - Monitor battery status
 - Set timers and reminders
@@ -29,7 +29,15 @@ For detailed documentation, features, and setup instructions, please visit:
 
 ## Support & Issues
 
-If you encounter any bugs or have feature requests, please [open an issue](https://github.com/yourusername/phone-mcp/issues) on our GitHub repository. We actively monitor and respond to issues.
+If you encounter any bugs or have feature requests, please [open an issue](https://github.com/priyankark/phonepi-mcp/issues) on our GitHub repository.
+
+### Background connections (Android app 1.0.1 and later)
+
+Connect to your desktop server, then enable **Background Service** while PhonePi MCP is open. Android displays a persistent notification while the service keeps the same connection and tool handlers active. The app retries after network changes or server restarts; your phone and desktop must remain reachable over your local network or VPN.
+
+Reopen PhonePi MCP after force-stopping it or restarting the phone. Continuous background connections are Android-only; keep the iOS app open. Camera capture and the SMS composer require the app to be in the foreground. `send_sms` prepares a message in your messaging app, where you confirm sending; a successful composer launch does not confirm delivery.
+
+To report a connection problem, include the app version, Android version, phone model, server version, and whether the failure occurs when enabling the service or after a network change.
 
 ## Contributing
 
