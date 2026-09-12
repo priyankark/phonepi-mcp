@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/priyankark-phonepi-mcp-badge.png)](https://mseep.ai/app/priyankark-phonepi-mcp)
+
 # PhonePi MCP: Turn your phone into a toolbox for AI assistants using Model Context Protocol
 
 A powerful MCP server and companion app that allows you to manage and control your phone remotely using natural language commands via your favorite MCP-supported AI apps such as Cursor and Claude Desktop. This project provides a comprehensive set of tools and APIs to interact with your mobile device programmatically.
